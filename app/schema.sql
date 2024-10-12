@@ -1,0 +1,9 @@
+-- schema.sql
+DROP TABLE IF EXISTS posts;
+
+CREATE TABLE posts (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    title TEXT NOT NULL,
+    content TEXT NOT NULL,
+    created TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
